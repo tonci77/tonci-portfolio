@@ -42,7 +42,7 @@ function App() {
     },
     {
       year: "2020–2022",
-      title: "Solution Architect",
+      title: "Solution Architect / Technical Lead",
       company: "Hrvatski Telekom",
       description: "Built R&D office. Delivered enterprise telecom product catalog, rule engine and order capture modules.",
       focus: ["R&D Setup", "Telecom Systems", "Product Development"]
