@@ -3,19 +3,20 @@
   <rect width="128" height="128" fill="#000000" rx="32"/>
   
   <!-- Subtle Amber Glow -->
-  <circle cx="64" cy="64" r="40" fill="#fbbf24" fill-opacity="0.1" />
+  <circle cx="64" cy="64" r="50" fill="#fbbf24" fill-opacity="0.05" />
 
-  <!-- TK Monogram in Old School Script Style -->
+  <!-- TK Monogram in Bold Plus Jakarta Sans Style (Simplified for favicon) -->
   <text 
     x="64" 
-    y="82" 
-    font-family="'Mrs Saint Delafield', cursive, 'Brush Script MT', 'Apple Chancery', sans-serif" 
-    font-size="90" 
+    y="88" 
+    font-family="system-ui, -apple-system, sans-serif" 
+    font-weight="900" 
+    font-size="75" 
     fill="#fbbf24" 
     text-anchor="middle"
-    style="filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.5));"
+    letter-spacing="-0.05em"
   >TK</text>
   
-  <!-- Accent Line -->
-  <path d="M40 90 Q 64 95 88 90" stroke="#fbbf24" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
+  <!-- Accent Line - Precision Indicator -->
+  <rect x="52" y="96" width="24" height="3" fill="#fbbf24" rx="1.5" opacity="0.8"/>
 </svg>
