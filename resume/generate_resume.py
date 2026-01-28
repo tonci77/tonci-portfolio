@@ -116,7 +116,7 @@ def create_resume_docx(script_dir):
             "title": "Supervisory Board Member",
             "company": "Parkovi i Nasadi d.o.o.",
             "dates": "2023 – 2025",
-            "desc": "Providing high-level governance and strategic advisory on multi-million euro digital infrastructure projects and organizational transformation for green management systems."
+            "desc": "Providing strategic governance and advisory on digital modernization initiatives and organizational transformation for green infrastructure management systems."
         },
         {
             "title": "Principal Consultant",

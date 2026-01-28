@@ -17,7 +17,7 @@ export const experiences = [
         year: "2023–2025",
         title: "Supervisory Board Member",
         company: "Parkovi i Nasadi d.o.o.",
-        description: "Providing governance oversight and strategic advisory on digital transformation for city-owned green infrastructure management.",
+        description: "Providing strategic governance and advisory on digital modernization initiatives and organizational transformation for green infrastructure management systems.",
         focus: ["Governance", "Digital Transformation", "Strategic Advisory"]
     },
     {

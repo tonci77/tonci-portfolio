@@ -26,7 +26,7 @@ Co-led a 30+ member engineering organization. Scaled the team, established organ
 
 ### **Supervisory Board Member** | Parkovi i Nasadi d.o.o.  
 *2023–2025*  
-Providing governance oversight and strategic advisory on digital transformation for city-owned green infrastructure management.
+Providing strategic governance and advisory on digital modernization initiatives and organizational transformation for green infrastructure management systems.
 
 ### **Principal Consultant** | TONCIK Consulting & Solutions  
 *2020–2025*  
