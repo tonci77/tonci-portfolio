@@ -16,33 +16,35 @@ export default function Industries() {
                     Industrial Footprint
                 </SectionTitle>
 
-                <div className="absolute top-[2%] md:top-[6%] right-0 w-full md:w-[90%] h-[400px] md:h-[750px] pointer-events-none z-0 overflow-hidden">
+                <div className="absolute top-[5%] md:top-[6%] right-0 w-full md:w-[90%] h-[500px] md:h-[750px] pointer-events-none z-0 overflow-hidden">
                     <motion.video
                         autoPlay
                         loop
                         muted
                         playsInline
-                        initial={{ x: "5%", opacity: 0 }}
-                        whileInView={{ x: 0, opacity: [0, 0.7, 0.95] }}
+                        initial={{ opacity: 0, scale: 1.2 }}
+                        whileInView={{ opacity: 1, scale: [1.2, 1.3, 1.2] }}
                         viewport={{ once: true }}
-                        transition={{ duration: 1.8, ease: [0.16, 1, 0.3, 1] }}
-                        className="w-full h-full object-contain object-center md:object-right-top mix-blend-screen scale-110 origin-center md:origin-top-right"
+                        transition={{
+                            opacity: { duration: 1.5 },
+                            scale: { duration: 20, repeat: Infinity, ease: "linear" }
+                        }}
+                        className="w-full h-full object-cover md:object-contain object-center md:object-right-top mix-blend-screen opacity-80 md:opacity-100"
                         style={{
-                            maskImage: 'radial-gradient(ellipse at 85% 30%, black 40%, rgba(0,0,0,0.5) 75%, transparent 100%)',
-                            WebkitMaskImage: 'radial-gradient(ellipse at 85% 30%, black 40%, rgba(0,0,0,0.5) 75%, transparent 100%)'
+                            maskImage: 'radial-gradient(circle at center, black 30%, rgba(0,0,0,0.5) 70%, transparent 100%)',
+                            WebkitMaskImage: 'radial-gradient(circle at center, black 30%, rgba(0,0,0,0.5) 70%, transparent 100%)'
                         }}
                     >
                         <source src={`${process.env.PUBLIC_URL || ''}/images/animated_domains.webm`} type="video/webm" />
                     </motion.video>
 
-                    {/* Text Protection Overlay - Deeper and wider for premium readability */}
-                    <div className="absolute inset-y-0 left-0 w-3/4 bg-gradient-to-r from-black via-black/90 to-transparent z-10" />
+                    {/* Text Protection Overlay - Optimized for Mobile Readability */}
+                    <div className="absolute inset-y-0 left-0 w-full md:w-3/4 bg-gradient-to-b md:bg-gradient-to-r from-black via-black/60 md:via-black/90 to-transparent z-10" />
 
-                    {/* Refined Cinematic Overlays - Smooth edge transitions */}
-                    <div className="absolute inset-0 bg-gradient-to-l from-black/0 via-black/5 to-black z-10" />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/10 to-transparent z-10" />
-                    <div className="absolute bottom-0 left-0 right-0 h-96 bg-gradient-to-t from-black via-black/95 to-transparent z-20" />
-                    <div className="absolute bottom-0 right-0 w-[500px] h-64 bg-gradient-to-tl from-black via-black/80 to-transparent z-20" />
+                    {/* Refined Cinematic Overlays */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/20 z-10 md:hidden" />
+                    <div className="hidden md:block absolute inset-0 bg-gradient-to-l from-black/0 via-black/5 to-black z-10" />
+                    <div className="absolute bottom-0 left-0 right-0 h-96 bg-gradient-to-t from-black via-black/80 to-transparent z-20" />
                 </div>
 
                 {/* Industry Cards Container */}
