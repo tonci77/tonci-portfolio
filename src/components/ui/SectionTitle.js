@@ -7,7 +7,7 @@ export default function SectionTitle({ children, subtitle }) {
         <div className="mb-24 relative z-10 text-center lg:text-left">
             <motion.h3
                 {...FADE_UP}
-                className="text-5xl md:text-6xl lg:text-8xl font-heading font-light mb-8 tracking-tighter leading-[0.9]"
+                className="text-4xl md:text-6xl lg:text-8xl font-heading font-light mb-8 tracking-tighter leading-[0.9]"
             >
                 {children}
             </motion.h3>

@@ -111,7 +111,7 @@ export default function IndustryCard({ industry, index }) {
                             </motion.span>
                             <motion.h2
                                 variants={{ hidden: { opacity: 0, y: 10 }, visible: { opacity: 1, y: 0 } }}
-                                className="text-4xl md:text-5xl lg:text-6xl xl:text-5xl 2xl:text-7xl font-heading font-light leading-[0.9] tracking-tight whitespace-nowrap pr-10"
+                                className="text-4xl md:text-5xl lg:text-6xl xl:text-5xl 2xl:text-7xl font-heading font-light leading-[0.9] tracking-tight whitespace-normal break-words md:whitespace-nowrap pr-4 md:pr-10"
                             >
                                 {industry.title}
                             </motion.h2>

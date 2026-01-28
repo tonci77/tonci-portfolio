@@ -20,7 +20,7 @@ export default function Experience() {
                             key={idx}
                             {...FADE_UP}
                             transition={{ ...FADE_UP.transition, delay: idx * 0.1 }}
-                            className="group relative grid lg:grid-cols-12 gap-8 p-12 glass-card rounded-[2.5rem] overflow-hidden"
+                            className="group relative grid lg:grid-cols-12 gap-8 p-8 md:p-12 glass-card rounded-[2.5rem] overflow-hidden"
                         >
                             {/* Accent Glow */}
                             <div className="absolute top-0 right-0 w-32 h-32 bg-brand-amber/5 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
@@ -35,7 +35,7 @@ export default function Experience() {
                                 <h4 className="text-3xl font-heading font-light mb-1 tracking-tight text-white group-hover:text-brand-amber transition-colors duration-300">
                                     {exp.title}
                                 </h4>
-                                <p className="text-brand-amber font-bold uppercase text-[10px] tracking-[0.3em] opacity-60 group-hover:opacity-100 transition-opacity">
+                                <p className="text-brand-amber font-bold uppercase text-[10px] tracking-[0.15em] md:tracking-[0.3em] opacity-60 group-hover:opacity-100 transition-opacity break-words">
                                     {exp.company}
                                 </p>
                             </div>
