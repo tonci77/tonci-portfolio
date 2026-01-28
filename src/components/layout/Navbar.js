@@ -53,30 +53,26 @@ export default function Navbar() {
             </div>
 
             {/* Mobile Menu Overlay */}
-            <AnimatePresence mode="wait">
+            <AnimatePresence>
                 {isOpen && (
-                    <motion.div
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
-                        className="fixed inset-0 z-[55] lg:hidden"
-                    >
-                        {/* Backdrop with dedicated exit */}
+                    <div className="fixed inset-0 z-[55] lg:hidden">
+                        {/* Backdrop with iOS specific optimization */}
                         <motion.div
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             exit={{ opacity: 0 }}
                             onClick={() => setIsOpen(false)}
                             className="absolute inset-0 bg-black/40 backdrop-blur-md"
+                            style={{ WebkitBackdropFilter: 'blur(12px)' }}
                         />
 
-                        {/* Menu Card */}
+                        {/* Menu Card - Removed !transition-none conflict and simplified spring */}
                         <motion.div
-                            initial={{ y: -10, opacity: 0, scale: 0.98 }}
-                            animate={{ y: 0, opacity: 1, scale: 1 }}
-                            exit={{ y: -10, opacity: 0, scale: 0.98 }}
-                            transition={{ type: "spring", damping: 25, stiffness: 200 }}
-                            className="absolute top-24 left-4 right-4 glass-card rounded-[2.5rem] p-10 overflow-hidden will-change-transform"
+                            initial={{ y: -20, opacity: 0 }}
+                            animate={{ y: 0, opacity: 1 }}
+                            exit={{ y: -20, opacity: 0 }}
+                            transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
+                            className="absolute top-24 left-4 right-4 glass-card !transition-none rounded-[2.5rem] p-10 overflow-hidden"
                         >
                             <div className="flex flex-col gap-8 text-center">
                                 {navItems.map((item, idx) => (
@@ -105,7 +101,7 @@ export default function Navbar() {
                                 </motion.a>
                             </div>
                         </motion.div>
-                    </motion.div>
+                    </div>
                 )}
             </AnimatePresence>
         </nav>
