@@ -97,14 +97,6 @@ export default function Hero() {
                                     className="w-full h-full object-cover transition-all duration-1000 scale-[1.08] object-[center_35%]"
                                 />
                             </div>
-
-                            {/* Handwritten Signature - World Class Sentiment */}
-                            <div className="absolute -bottom-4 -right-4 z-50 transform -rotate-12 pointer-events-none mix-blend-screen">
-                                <span className="text-[3rem] text-brand-amber/30 font-normal select-none blur-[0.3px]"
-                                    style={{ fontFamily: '"Mrs Saint Delafield", cursive', textShadow: '0px 0px 8px rgba(251,191,36,0.3)' }}>
-                                    Tonći Kučić
-                                </span>
-                            </div>
                         </div>
                     </motion.div>
                 </div>
