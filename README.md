@@ -84,8 +84,9 @@ The design DNA is inspired by premium fintech and automotive interfaces.
 1.  **Brand Amber (#fbbf24):** Used as a surgical accent color against a primary **Deep Black (#000000)** canvas to represent high-value data and precision.
 2.  **Executive Glassmorphism:** Strategic use of `backdrop-blur-xl` and `white/[0.03]` borders to create layers of depth and professional weight.
 3.  **Typography:** 
-    *   **Handwritten Script:** Used in the favicon and signature for a "signed" personal touch.
-    *   **Manrope & Inter:** Clean, sans-serif fonts chosen for readability and modern corporate authority.
+    *   **Plus Jakarta Sans:** Used for headings to project premium corporate authority and handle Croatian diacritics with high fidelity.
+    *   **Inter:** The gold standard for UI legibility, used for body text with optimized tracking for editorial readability.
+    *   **Playfair Display:** Used sparingly for high-fidelity editorial accents.
 
 ---
 
