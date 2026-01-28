@@ -1,70 +1,110 @@
-# Getting Started with Create React App
+# Tonći Kučić — Strategic Engineering Executive Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![React](https://img.shields.io/badge/React-18.x-61dafb?logo=react)](https://reactjs.org/)
+[![Framer Motion](https://img.shields.io/badge/Framer--Motion-12.x-ff69b4?logo=framer)](https://www.framer.com/motion/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind--CSS-3.x-38b2ac?logo=tailwind-css)](https://tailwindcss.com/)
+[![License](https://img.shields.io/badge/License-Private-lightgrey.svg)](#)
 
-## Available Scripts
+A world-class, high-performance digital portfolio designed for the C-Suite. This project represents the intersection of **Deep Technical Architecture** and **Executive Business Strategy**, serving as both a professional brand platform and an automated document generation engine.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🏛 Project Philosophy & Representation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This repository is more than a personal website; it is a **Digital Executive Identity System**. It is engineered to communicate high-trust, data-driven leadership to Fortune 500 CEOs, Board Members, and Investors.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Core Objectives:
+*   **Authority Positioning:** Establishing domain expertise in Telecommunications, iGaming, Life Sciences, and Smart Cities.
+*   **Performance as Branding:** Utilizing hardware-accelerated animations and optimized assets to demonstrate technical rigor.
+*   **Multi-Channel Consistency:** Ensuring the professional narrative is identical across the web profile and physical resume documents.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📂 Project Structure
 
-### `npm run build`
+The project follows a modular architecture designed for high maintainability and lean performance.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```text
+├── public/                # Static assets & metadata
+│   ├── images/            # Optimized WebM/PNG industry visual assets
+│   ├── favicon.svg        # Custom brand amber monogram
+│   └── manifest.json      # PWA metadata
+├── resume/                # Resume Logic Hub (Automation)
+│   ├── generate_resume.py # Python-based DOCX generator
+│   ├── RESUME.md          # Content "Source of Truth"
+│   └── *.docx             # Generated professional assets
+├── src/                   
+│   ├── components/        # Functional UI split by Layout, Sections, and Atomic UI
+│   ├── data/              # The "Central Brain" - all content lives here
+│   ├── constants/         # Shared animation & brand tokens
+│   └── index.css          # Global Design System (Tailwind layers)
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📄 The Resume Pipeline (Dual-Output Logic)
 
-### `npm run eject`
+A unique feature of this project is the **Resume Automation Hub** located in `/resume`. This logic ensures that your professional document is never out of sync with your live website.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### How it works:
+1.  **Source of Truth:** All professional data lives in `src/data/experiences.js` for the website.
+2.  **Logic Synchronization:** The `resume/generate_resume.py` script contains the formal executive styling for document output.
+3.  **One-Command Generation:**
+    ```bash
+    # From the project root:
+    python3 resume/generate_resume.py
+    ```
+    This script outputs a high-class **.docx** file formatted specifically for executive recruiters and board-level reviewers, including specialized focus on Global Team Leadership and Cross-Domain Strategy.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## ⚡ Technical Infrastructure
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Built on a modern, future-proof stack optimized for Core Web Vitals and smooth interaction.
 
-## Learn More
+*   **React 18:** Functional component architecture with defensive state management.
+*   **Framer Motion:** Used for the cinematic "Industrial Footprint" background and scroll-linked parallax effects.
+*   **Tailwind CSS:** A utility-first CSS implementation using custom layers for **Glassmorphism** and **Executive Dark Mode**.
+*   **Lucide React:** Consistent, high-fidelity iconography.
+*   **Performance Optimization:**
+    *   **iOS Flicker Mitigation:** Explicit GPU acceleration hints for Safari.
+    *   **Lazy Loading:** Native browser-level lazy loading for industrial image assets.
+    *   **WebM Animation:** Replacing heavy GIFs with high-bitrate, low-weight video containers.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🎨 Design Approach: "The Executive Aesthetic"
 
-### Code Splitting
+The design DNA is inspired by premium fintech and automotive interfaces.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1.  **Brand Amber (#fbbf24):** Used as a surgical accent color against a primary **Deep Black (#000000)** canvas to represent high-value data and precision.
+2.  **Executive Glassmorphism:** Strategic use of `backdrop-blur-xl` and `white/[0.03]` borders to create layers of depth and professional weight.
+3.  **Typography:** 
+    *   **Handwritten Script:** Used in the favicon and signature for a "signed" personal touch.
+    *   **Manrope & Inter:** Clean, sans-serif fonts chosen for readability and modern corporate authority.
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🚀 Getting Started
 
-### Making a Progressive Web App
+### Prerequisites:
+*   Node.js (v16+)
+*   Python 3 (for resume generation)
+*   `python-docx` library (`pip install python-docx`)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Local Development:
+```bash
+npm install
+npm start
+```
 
-### Advanced Configuration
+### Production Build:
+```bash
+npm run build
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## 📝 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project and its content are private and intellectual property of **Tonći Kučić**.

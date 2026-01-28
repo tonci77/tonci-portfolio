@@ -80,7 +80,7 @@ export default function Leadership() {
 
                         <div className="p-10 bg-brand-amber/[0.03] border-l-[3px] border-brand-amber mb-12 rounded-r-3xl">
                             <p className="text-xl text-gray-300 italic font-light leading-relaxed">
-                                "In my published book, I explore the spectrum of management personas: Are You a Shark, a Whale, or a Turtle? Understanding these behavioral drivers is how we scale culture alongside code."
+                                "In my co-authored book, I explore the spectrum of management personas: Are You a Shark, a Whale, or a Turtle? Understanding these behavioral drivers is how we scale culture alongside code."
                             </p>
                         </div>
 
