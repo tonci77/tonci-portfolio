@@ -5,9 +5,21 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+  }
+
   body {
     @apply bg-black text-white antialiased selection:bg-brand-amber/30 selection:text-white;
     font-family: 'Inter', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Optimize for high-performance animations */
+  .motion-safe {
+    will-change: transform, opacity;
   }
 
   h1,
@@ -65,8 +77,4 @@
 
 ::-webkit-scrollbar-thumb:hover {
   @apply bg-brand-amber/50;
-}
-
-html {
-  scroll-behavior: smooth;
 }

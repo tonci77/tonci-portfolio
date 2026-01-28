@@ -66,6 +66,7 @@ export default function IndustryCard({ industry, index }) {
                         <img
                             src={industry.image}
                             alt={industry.title}
+                            loading="lazy"
                             className={cn(
                                 "w-full h-full object-cover transition-all duration-1000 blur-0 group-hover:scale-110 brightness-[0.75] group-hover:brightness-100"
                             )}

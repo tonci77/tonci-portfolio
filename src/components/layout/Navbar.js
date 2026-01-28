@@ -53,32 +53,41 @@ export default function Navbar() {
             </div>
 
             {/* Mobile Menu Overlay */}
-            <AnimatePresence>
+            <AnimatePresence mode="wait">
                 {isOpen && (
-                    <>
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        className="fixed inset-0 z-[55] lg:hidden"
+                    >
+                        {/* Backdrop with dedicated exit */}
                         <motion.div
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             exit={{ opacity: 0 }}
                             onClick={() => setIsOpen(false)}
-                            className="fixed inset-0 bg-black/60 backdrop-blur-md z-[55] lg:hidden"
+                            className="absolute inset-0 bg-black/40 backdrop-blur-md"
                         />
+
+                        {/* Menu Card */}
                         <motion.div
-                            initial={{ y: -20, opacity: 0 }}
-                            animate={{ y: 0, opacity: 1 }}
-                            exit={{ y: -20, opacity: 0 }}
-                            className="fixed top-24 left-4 right-4 glass-card rounded-[2rem] p-8 z-[56] lg:hidden overflow-hidden"
+                            initial={{ y: -10, opacity: 0, scale: 0.98 }}
+                            animate={{ y: 0, opacity: 1, scale: 1 }}
+                            exit={{ y: -10, opacity: 0, scale: 0.98 }}
+                            transition={{ type: "spring", damping: 25, stiffness: 200 }}
+                            className="absolute top-24 left-4 right-4 glass-card rounded-[2.5rem] p-10 overflow-hidden will-change-transform"
                         >
-                            <div className="flex flex-col gap-6 text-center">
+                            <div className="flex flex-col gap-8 text-center">
                                 {navItems.map((item, idx) => (
                                     <motion.a
                                         key={item}
                                         href={`#${item.toLowerCase()}`}
                                         onClick={() => setIsOpen(false)}
-                                        initial={{ opacity: 0, x: -10 }}
-                                        animate={{ opacity: 1, x: 0 }}
-                                        transition={{ delay: idx * 0.1 }}
-                                        className="text-sm uppercase tracking-[0.4em] font-black text-gray-400 hover:text-brand-amber transition-colors py-2"
+                                        initial={{ opacity: 0, y: 10 }}
+                                        animate={{ opacity: 1, y: 0 }}
+                                        transition={{ delay: idx * 0.05 }}
+                                        className="text-lg uppercase tracking-[0.4em] font-black text-gray-400 hover:text-brand-amber transition-colors py-2"
                                     >
                                         {item}
                                     </motion.a>
@@ -89,14 +98,14 @@ export default function Navbar() {
                                     rel="noopener noreferrer"
                                     initial={{ opacity: 0, y: 10 }}
                                     animate={{ opacity: 1, y: 0 }}
-                                    transition={{ delay: 0.4 }}
-                                    className="sm:hidden flex items-center justify-center gap-3 px-8 py-4 bg-white text-black text-[10px] font-black rounded-full shadow-2xl mt-4"
+                                    transition={{ delay: 0.3 }}
+                                    className="sm:hidden flex items-center justify-center gap-3 px-8 py-5 bg-white text-black text-[12px] font-black rounded-full shadow-2xl mt-6 active:scale-95 transition-transform"
                                 >
-                                    CONNECT <Linkedin className="w-4 h-4" strokeWidth={3} />
+                                    CONNECT <Linkedin className="w-5 h-5" strokeWidth={3} />
                                 </motion.a>
                             </div>
                         </motion.div>
-                    </>
+                    </motion.div>
                 )}
             </AnimatePresence>
         </nav>

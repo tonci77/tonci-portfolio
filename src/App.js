@@ -8,7 +8,7 @@ import Leadership from './components/sections/Leadership';
 import Industries from './components/sections/Industries';
 import Experience from './components/sections/Experience';
 import TechEcosystem from './components/sections/TechEcosystem';
-import './App.css';
+
 
 function App() {
   const containerRef = useRef(null);
