@@ -30,11 +30,11 @@ Providing strategic governance and advisory on digital modernization initiatives
 
 ### **Principal Consultant** | TONCIK Consulting & Solutions  
 *2020–2025*  
-Strategic consulting on Business Process Digitalization, Enterprise Architecture, **Life Sciences (Clinical Trials & Healthcare systems)**, Smart City solutions, and Intelligent Transportation Systems (ITS).
+Delivering strategic business and technology guidance for Smart City Digitalization, and Intelligent Transportation Systems (ITS) to public and private sector clients.
 
 ### **Solution Architect** | Hrvatski Telekom  
 *2020–2022*  
-Established a greenfield R&D innovation office. Architected and delivered enterprise Product Catalog and Order Capture platforms for Croatia's largest telecom provider.
+Established a greenfield R&D Innovation office. Architected and delivered enterprise Product Catalog and Order Capture platforms for Croatia's largest telecom provider.
 
 ### **Engineering Team Lead** | Fortuna Entertainment Group  
 *2018–2020*  

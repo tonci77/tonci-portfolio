@@ -24,14 +24,14 @@ export const experiences = [
         year: "2020–2025",
         title: "Principal Consultant",
         company: "TONCIK Consulting & Solutions",
-        description: "Strategic consulting on Business Process Digitalization, Enterprise Architecture, Smart City solutions, and Intelligent Transportation Systems (ITS) for government and private sector clients.",
+        description: "Delivering strategic business and technology guidance for Smart City Digitalization, and Intelligent Transportation Systems (ITS) to public and private sector clients.",
         focus: ["Public Sector", "Digital Transformation", "Business Process Digitalization"]
     },
     {
         year: "2020–2022",
         title: "Solution Architect",
         company: "Hrvatski Telekom",
-        description: "Established a greenfield R&D innovation office. Architected and delivered enterprise Product Catalog and Order Capture platforms for Croatia's largest telecom provider.",
+        description: "Established a greenfield R&D Innovation office. Architected and delivered enterprise Product Catalog and Order Capture platforms for Croatia's largest telecom provider.",
         focus: ["R&D Innovation", "Enterprise Architecture", "Product Catalog", "Billing", "Order Capture", "Team Leadership"]
     },
     {

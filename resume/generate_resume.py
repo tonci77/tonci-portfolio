@@ -122,13 +122,13 @@ def create_resume_docx(script_dir):
             "title": "Principal Consultant",
             "company": "TONCIK Consulting & Solutions",
             "dates": "2020 – 2025",
-            "desc": "Delivering strategic enterprise architecture for Life Sciences (Clinical Trials), Smart City Digitalization, and Intelligent Transportation Systems (ITS) to public and private sector clients."
+            "desc": "Delivering strategic business and technology guidance for Smart City Digitalization, and Intelligent Transportation Systems (ITS) to public and private sector clients."
         },
         {
             "title": "Solution Architect",
             "company": "Hrvatski Telekom",
             "dates": "2020 – 2022",
-            "desc": "Lead Architect for greenfield R&D R&D Innovation. Engineered enterprise-scale Product Catalog and Order Capture platforms for Croatia's Tier-1 Telecom provider."
+            "desc": "Lead Architect for greenfield R&D Innovation. Engineered enterprise-scale Product Catalog and Order Capture platforms for Croatia's Tier-1 Telecom provider."
         },
         {
             "title": "Engineering Team Lead",
@@ -177,68 +177,136 @@ def create_resume_docx(script_dir):
     print(f"Resume generated at: {docx_path}")
     return docx_path
 
+
 def generate_linkedin_guide(script_dir):
     guide_path = os.path.join(script_dir, "LINKEDIN_GUIDE.md")
     content = """# 🚀 LinkedIn Elite Profile Upgrade Guide: Tonći Kučić
 
-This guide is automatically synchronized with your latest Executive Resume data. Use these sections to transform your LinkedIn profile into a **C-Level Authority Hub**.
+This comprehensive guide is engineered to transform your LinkedIn profile into a high-authority **Executive Brand Asset**. It is synchronized with your latest resume data to ensure 100% narrative consistency.
 
 ---
 
-## 1. The "Power Headline" (The Hook)
-*Copy and paste this into your LinkedIn Headline:*
-
-**Head of Engineering at Casumo | Strategic Technology Executive | Board Member | Co-author of 'Peak Performance' | Scaling High-Performance Cultures through Organizational Psychology**
-
----
-
-## 2. The "About" Section (The Narrative)
-*Use this for your Summary section to bridge technical rigor with boardroom value:*
-
-Engineering Executive with 20+ years of experience delivering mission-critical technology solutions and leading global organizational transformations. I specialize in bridging the gap between complex engineering roadmaps and boardroom-level business strategy.
-
-**Differentiators:**
-- **The Psychologist of Scale:** Applying organizational psychology frameworks (Shark/Whale/Turtle personas) to unlock elite performance in engineering cultures.
-- **Precision in Regulation:** Veteran lead for Tier-1 operators in mission-critical environments (iGaming, Telecom, Life Sciences).
-- **Capital Efficiency:** Proven track record in P&L management, M&A due diligence, and translating R&D into Product-Led Growth.
-
-Co-author of **'Peak Performance: Mindset & Tools for Managers'**. Check out my digital ecosystem at: https://tonci77.github.io/tonci-portfolio/
+## 🎯 OBJECTIVE: The "Boardroom-Ready" Signal
+The goal is not just to look "hired," but to look like a **Thought Leader** and **Industry Authority**. Every section must answer three questions for a recruiter or board member:
+1.  **Can he scale our organization?** (Scale)
+2.  **Does he understand the business?** (Value)
+3.  **Is he a modern leader?** (Culture)
 
 ---
 
-## 3. Experience Optimization (Selective Impact)
-*For your current role at Casumo:*
+## 🛠 STEP 1: VISUAL IDENTITY (The First 3 Seconds)
 
-**Headline:** Head of Engineering
-**Description:**
-Directing engineering strategy for a Tier-1 global iGaming platform. Scaling 40+ engineers across Payments, Casino, and Sports verticals. 
-- Integrated internal frameworks for engineering excellence.
-- Architecting high-availability systems for global scale.
-- Driving culture transformation using organizational psychology methodologies.
+### 1. Banner Image (The "Billboard")
+*   **Action:** Do not use the default grey background.
+*   **Recommendation:** Use a clean, abstract image of **digital topography, abstract networks, or minimalist architecture** (black/amber theme matches your portfolio).
+*   **Alternative:** A photo of you speaking at an event or leading a workshop (high social proof).
 
----
-
-## 4. Featured Section (The "Halo Effect")
-Add these as "Featured" items on your profile:
-1. **Link:** Digital Portfolio (https://tonci77.github.io/tonci-portfolio/)
-2. **Link:** Purchase 'Peak Performance' on Amazon (https://www.amazon.com/Peak-Performance-Mindset-Tools-Managers-ebook/dp/B0DKTV2WBT)
-3. **Media:** Upload your latest PDF Resume (generated in this folder).
+### 2. Profile Photo
+*   **Status:** Use your current professional headshot.
+*   **Tweak:** Ensure it zooms in on your face (smiling/approachable but authoritative). No busy backgrounds.
 
 ---
 
-## 5. Skills & Endorsements
-*Ensure these top 3 are pinned:*
-1. **Technology Strategy**
-2. **Organizational Psychology**
-3. **Enterprise Architecture**
+## ✍️ STEP 2: THE HOOK (Headline & Intro)
+
+### 1. The "Power Headline"
+This is the most critical text on your profile. It dictates SEO and first impressions.
+*   **Copy & Paste This Exact Block:**
+    > **Head of Engineering at Casumo | Strategic Technology Executive | Board Member | Co-author of 'Peak Performance' | Scaling High-Performance Cultures through Organizational Psychology**
+
+### 2. Audio Pronunciation
+*   **Action:** Use the LinkedIn mobile app to record your name pronunciation.
+*   **Bonus:** Add a subtle pitch: *"Tonći Kučić. Scaling engineering excellence."*
 
 ---
 
-*Last Updated: 2026-01-28*
+## 📖 STEP 3: THE NARRATIVE (About Section)
+
+This is your executive pitch. It bridges the gap between "Tech Guy" and "Business Leader."
+
+*   **Copy & Paste This Draft:**
+
+    > **Engineering Executive with 20+ years of experience delivering mission-critical technology solutions and leading global organizational transformations.**
+    >
+    > I specialize in bridging the gap between complex engineering roadmaps and boardroom-level business strategy. My career has been defined by two pillars: **Technical Precision** in ultra-regulated industries (iGaming, Telecom, Smart Cities) and **Human Capital Architecture**.
+    >
+    > **🏛 STRATEGIC DIFFERENTIATORS:**
+    >
+    > *   **The Psychologist of Scale:** As Co-author of *'Peak Performance'*, I apply organizational psychology frameworks (Shark/Whale/Turtle personas) to unlock elite performance in engineering cultures.
+    > *   **Precision in Regulation:** Veteran lead for Tier-1 operators (Casumo, Hrvatski Telekom) where downtime and compliance failure are not options.
+    > *   **Capital Efficiency:** Proven track record in P&L management, M&A due diligence, and translating R&D into Product-Led Growth.
+    >
+    > **🚀 CURRENT FOCUS:**
+    > Currently leading engineering at **Casumo**, scaling a 40+ person distributed organization to drive platform resilience and multi-vertical growth (Casino, Sports, Payments).
+    >
+    > **📚 AUTHORSHIP:**
+    > Co-author of **"Peak Performance: Mindset & Tools for Managers"** — A guide for modern leaders on building resilient, high-efficacy teams.
+    >
+    > **🌐 DIGITAL ECOSYSTEM:**
+    > Detailed Case Studies & Portfolio: https://tonci77.github.io/tonci-portfolio/
+
+---
+
+## 💼 STEP 4: EXPERIENCE (The Evidence)
+
+Don't just list tasks. List **Impact** and **Scale**.
+
+### 1. Casumo (Head of Engineering)
+*   **Action:** Update your current role.
+*   **Description:**
+    > **Strategic Ownership:** Directing engineering strategy for a Tier-1 global iGaming platform.
+    > **Scale:** Leading 40+ engineers across Payments, Casino, and Sports verticals.
+    > **Impact:**
+    > *   Driving platform resilience and engineering culture transformation.
+    > *   Integrated internal frameworks for engineering excellence and talent density.
+    > *   Architecting high-availability systems for global scale in regulated markets.
+
+### 2. Parkovi i Nasadi (Supervisory Board Member)
+*   **Action:** Ensure this is listed to signal **Governance Experience**.
+*   **Description:**
+    > Providing strategic governance and advisory on digital modernization initiatives and organizational transformation for green infrastructure management systems.
+
+### 3. TONCIK Consulting (Principal Consultant)
+*   **Action:** Highlight your advisory capacity.
+*   **Description:**
+    > Delivering strategic business and technology guidance for Smart City Digitalization and Intelligent Transportation Systems (ITS) to public and private sector clients.
+
+---
+
+## 🌟 STEP 5: FEATURED SECTION (The Halo Effect)
+
+This is the big visual carousel at the top of your profile. **Strategic placement is key.**
+
+1.  **Slot 1 (The Portfolio):** Link to `https://tonci77.github.io/tonci-portfolio/`. Use a thumbnail of your website's Hero section.
+2.  **Slot 2 (The Book):** Link to your Amazon book page. Title it: *"Co-authored Book: Peak Performance"*.
+3.  **Slot 3 (The Resume):** Upload the PDF generated in this folder (`Tonci_Kucic_Executive_Resume.pdf`). Title it: *"Executive Resume 2026"*.
+
+---
+
+## 💡 STEP 6: SKILLS & ENDORSEMENTS (SEO Optimization)
+
+LinkedIn's algorithm searches for keywords here. Ensure you have 50 skills listed.
+*   **Top 3 Constraints (Pin These):**
+    1.  **Technology Strategy**
+    2.  **Organizational Psychology**
+    3.  **Enterprise Architecture**
+*   **Other Critical Keywords:**
+    *   Executive Leadership
+    *   Digital Transformation
+    *   iGaming
+    *   Telecommunications
+    *   Distributed Team Management
+    *   Product-Led Growth
+    *   Board Advisory
+
+---
+
+*Last Updated for Executive Impact: 2026-01-28*
 """
     with open(guide_path, "w") as f:
         f.write(content)
     print(f"LinkedIn Guide generated at: {guide_path}")
+
 
 if __name__ == "__main__":
     script_dir = os.path.dirname(os.path.abspath(__file__))
