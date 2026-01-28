@@ -38,7 +38,7 @@ Established a greenfield R&D Innovation office. Architected and delivered enterp
 
 ### **Engineering Team Lead** | Fortuna Entertainment Group  
 *2018–2020*  
-Led engineering delivery for virtual sports gaming platforms across Central European markets, managing distributed teams and driving platform reliability.
+Led engineering delivery for virtual games platforms across Central European markets, managing distributed teams and driving platform reliability.
 
 ### **Solution Architect / Senior Engineering Lead** | Kron d.o.o.  
 *2004–2018*  

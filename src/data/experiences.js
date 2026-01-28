@@ -38,8 +38,8 @@ export const experiences = [
         year: "2018–2020",
         title: "Engineering Team Lead",
         company: "Fortuna Entertainment Group",
-        description: "Led engineering delivery for virtual sports gaming platforms across Central European markets, managing distributed teams and driving platform reliability.",
-        focus: ["Team Scaling", "Virtual Sports", "Feature Velocity", "Team Leadership", "Performance Reviews", "Coaching & Mentoring"]
+        description: "Led engineering delivery for virtual games platforms across Central European markets, managing distributed teams and driving platform reliability.",
+        focus: ["Team Scaling", "Virtual Games", "Feature Velocity", "Team Leadership", "Performance Reviews", "Coaching & Mentoring"]
     },
     {
         year: "2004–2018",

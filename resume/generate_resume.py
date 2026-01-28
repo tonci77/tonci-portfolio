@@ -134,7 +134,7 @@ def create_resume_docx(script_dir):
             "title": "Engineering Team Lead",
             "company": "Fortuna Entertainment Group",
             "dates": "2018 – 2020",
-            "desc": "Managed engineering delivery for high-load virtual sports platforms across Central Europe. Focused on horizontal scalability, high-availability architecture, and rapid feature velocity."
+            "desc": "Managed engineering delivery for high-load virtual games platforms across Central Europe. Focused on horizontal scalability, high-availability architecture, and rapid feature velocity."
         },
         {
             "title": "Senior Solution Architect / Lead Developer",
