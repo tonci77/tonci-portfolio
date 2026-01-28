@@ -1,6 +1,6 @@
 # TONĆI KUČIĆ
 **Engineering Executive • Business Value & Strategy**
-Split, Croatia | 003598323033 | tonci.kucic@gmail.com
+Split, Croatia | +385 98 323 033 | tonci.kucic@gmail.com
 [linkedin.com/in/toncikucic](https://linkedin.com/in/toncikucic) | [tonci77.github.io/tonci-portfolio](https://tonci77.github.io/tonci-portfolio/)
 
 ---

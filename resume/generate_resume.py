@@ -58,7 +58,7 @@ def create_resume_docx(script_dir):
     tagline.font.color.rgb = RGBColor(30, 30, 30)
     header.add_run("\n")
     
-    contact = header.add_run("Split, Croatia | 003598323033 | tonci.kucic@gmail.com")
+    contact = header.add_run("Split, Croatia | +385 98 323 033 | tonci.kucic@gmail.com")
     contact.font.size = Pt(10)
     header.add_run("\n")
     
