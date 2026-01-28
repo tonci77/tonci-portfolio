@@ -31,7 +31,7 @@ def add_link(paragraph, url, text):
     hyperlink.append(new_run)
     paragraph._p.append(hyperlink)
 
-def create_resume():
+def create_resume_docx(script_dir):
     doc = Document()
     style_doc(doc)
 
@@ -146,21 +146,15 @@ def create_resume():
 
     for job in jobs:
         p = doc.add_paragraph()
-        title_run = p.add_run(f"{job['title']} ")
-        title_run.bold = True
-        title_run.font.size = Pt(11)
-        
+        p.add_run(f"{job['title']} ").bold = True
         p.add_run(f"| {job['company']}").font.color.rgb = RGBColor(100, 100, 100)
-        
         run = p.add_run(f"\t\t{job['dates']}")
         run.italic = True
-        
         doc.add_paragraph(job['desc']).paragraph_format.space_after = Pt(8)
 
-    # --- TECHNICAL & ARCHITECTURAL STACK ---
+    # --- TECHNICAL ---
     h4 = doc.add_heading('TECHNICAL & ARCHITECTURAL ECOSYSTEM', level=1)
     h4.runs[0].font.color.rgb = RGBColor(26, 54, 93)
-    
     techs = [
         "Enterprise Architecture: Microservices, Event-Driven, DDD, SOA, System Integration, High-Availability Design.",
         "Cloud & Platform: AWS, GCP, Kubernetes, Docker, Infrastructure as Code (IaC), CI/CD, ELK, Grafana.",
@@ -178,16 +172,82 @@ def create_resume():
     p_pub.add_run("\nA world-class strategic guide to scaling high-performance engineering culture via organizational psychology. ")
     add_link(p_pub, "https://www.amazon.com/Peak-Performance-Mindset-Tools-Managers-ebook/dp/B0DKTV2WBT", "[Purchase Link]")
 
-    # --- FINAL SAVE ---
-    import os
-    script_dir = os.path.dirname(os.path.abspath(__file__))
     docx_path = os.path.join(script_dir, "Tonci_Kucic_Executive_Resume.docx")
-    pdf_path = os.path.join(script_dir, "Tonci_Kucic_Executive_Resume.pdf")
-    
     doc.save(docx_path)
     print(f"Resume generated at: {docx_path}")
+    return docx_path
+
+def generate_linkedin_guide(script_dir):
+    guide_path = os.path.join(script_dir, "LINKEDIN_GUIDE.md")
+    content = """# 🚀 LinkedIn Elite Profile Upgrade Guide: Tonći Kučić
+
+This guide is automatically synchronized with your latest Executive Resume data. Use these sections to transform your LinkedIn profile into a **C-Level Authority Hub**.
+
+---
+
+## 1. The "Power Headline" (The Hook)
+*Copy and paste this into your LinkedIn Headline:*
+
+**Head of Engineering at Casumo | Strategic Technology Executive | Board Member | Co-author of 'Peak Performance' | Scaling High-Performance Cultures through Organizational Psychology**
+
+---
+
+## 2. The "About" Section (The Narrative)
+*Use this for your Summary section to bridge technical rigor with boardroom value:*
+
+Engineering Executive with 20+ years of experience delivering mission-critical technology solutions and leading global organizational transformations. I specialize in bridging the gap between complex engineering roadmaps and boardroom-level business strategy.
+
+**Differentiators:**
+- **The Psychologist of Scale:** Applying organizational psychology frameworks (Shark/Whale/Turtle personas) to unlock elite performance in engineering cultures.
+- **Precision in Regulation:** Veteran lead for Tier-1 operators in mission-critical environments (iGaming, Telecom, Life Sciences).
+- **Capital Efficiency:** Proven track record in P&L management, M&A due diligence, and translating R&D into Product-Led Growth.
+
+Co-author of **'Peak Performance: Mindset & Tools for Managers'**. Check out my digital ecosystem at: https://tonci77.github.io/tonci-portfolio/
+
+---
+
+## 3. Experience Optimization (Selective Impact)
+*For your current role at Casumo:*
+
+**Headline:** Head of Engineering
+**Description:**
+Directing engineering strategy for a Tier-1 global iGaming platform. Scaling 40+ engineers across Payments, Casino, and Sports verticals. 
+- Integrated internal frameworks for engineering excellence.
+- Architecting high-availability systems for global scale.
+- Driving culture transformation using organizational psychology methodologies.
+
+---
+
+## 4. Featured Section (The "Halo Effect")
+Add these as "Featured" items on your profile:
+1. **Link:** Digital Portfolio (https://tonci77.github.io/tonci-portfolio/)
+2. **Link:** Purchase 'Peak Performance' on Amazon (https://www.amazon.com/Peak-Performance-Mindset-Tools-Managers-ebook/dp/B0DKTV2WBT)
+3. **Media:** Upload your latest PDF Resume (generated in this folder).
+
+---
+
+## 5. Skills & Endorsements
+*Ensure these top 3 are pinned:*
+1. **Technology Strategy**
+2. **Organizational Psychology**
+3. **Enterprise Architecture**
+
+---
+
+*Last Updated: 2026-01-28*
+"""
+    with open(guide_path, "w") as f:
+        f.write(content)
+    print(f"LinkedIn Guide generated at: {guide_path}")
+
+if __name__ == "__main__":
+    script_dir = os.path.dirname(os.path.abspath(__file__))
     
-    # PDF Conversion (macOS specific - requires Microsoft Word)
+    # 1. Generate DOCX
+    docx_path = create_resume_docx(script_dir)
+    
+    # 2. Generate PDF
+    pdf_path = os.path.join(script_dir, "Tonci_Kucic_Executive_Resume.pdf")
     try:
         from docx2pdf import convert
         print("Converting to PDF (requires Microsoft Word to be open)...")
@@ -197,7 +257,5 @@ def create_resume():
         print(f"\n[Note] PDF conversion skipped or failed: {e}")
         print("PDF conversion on Mac requires Microsoft Word to be installed.")
     
-    return docx_path
-
-if __name__ == "__main__":
-    create_resume()
+    # 3. Generate LinkedIn Guide
+    generate_linkedin_guide(script_dir)

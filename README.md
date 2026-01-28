@@ -29,10 +29,11 @@ The project follows a modular architecture designed for high maintainability and
 │   ├── images/            # Optimized WebM/PNG industry visual assets
 │   ├── favicon.svg        # Custom brand amber monogram
 │   └── manifest.json      # PWA metadata
-├── resume/                # Resume Logic Hub (Automation)
-│   ├── generate_resume.py # Python-based DOCX generator
+├── resume/                # Resume & Social Authority Hub
+│   ├── generate_resume.py # Python-based Triple-Asset generator
 │   ├── RESUME.md          # Content "Source of Truth"
-│   └── *.docx             # Generated professional assets
+│   ├── LINKEDIN_GUIDE.md  # Elite LinkedIn Profile Upgrade Guide
+│   └── *.docx | *.pdf     # Generated professional assets
 ├── src/                   
 │   ├── components/        # Functional UI split by Layout, Sections, and Atomic UI
 │   ├── data/              # The "Central Brain" - all content lives here
@@ -42,19 +43,22 @@ The project follows a modular architecture designed for high maintainability and
 
 ---
 
-## 📄 The Resume Pipeline (Dual-Output Logic)
+## 📄 The Authority Pipeline (Triple-Output Automation)
 
-A unique feature of this project is the **Resume Automation Hub** located in `/resume`. This logic ensures that your professional document is never out of sync with your live website.
+A unique feature of this project is the **Brand Automation Hub** located in `/resume`. This logic ensures that your entire professional presence—Web, Document, and Social—is perfectly synchronized.
 
 ### How it works:
-1.  **Source of Truth:** All professional data lives in `src/data/experiences.js` for the website.
-2.  **Logic Synchronization:** The `resume/generate_resume.py` script contains the formal executive styling for document output.
+1.  **Source of Truth:** All professional data lives in your code/markdown as the primary origin.
+2.  **Logic Synchronization:** The `resume/generate_resume.py` script contains the formal executive styling for document output and social guidelines.
 3.  **One-Command Generation:**
     ```bash
     # From the project root:
     python3 resume/generate_resume.py
     ```
-    This script outputs a high-class **.docx** file formatted specifically for executive recruiters and board-level reviewers, including specialized focus on Global Team Leadership and Cross-Domain Strategy.
+    This script outputs three high-class assets:
+    *   **DOCX**: A pixel-perfect, navy-themed executive resume for recruiters.
+    *   **PDF**: A board-level document ready for direct executive communication.
+    *   **LinkedIn Guide**: A specific tactical guide for upgrading your social presence to match your elite brand.
 
 ---
 
@@ -89,8 +93,9 @@ The design DNA is inspired by premium fintech and automotive interfaces.
 
 ### Prerequisites:
 *   Node.js (v16+)
-*   Python 3 (for resume generation)
-*   `python-docx` library (`pip install python-docx`)
+*   Python 3 (for asset generation)
+*   Python Libraries: `pip install python-docx docx2pdf`
+*   **Microsoft Word** (Required for high-fidelity PDF conversion on macOS)
 
 ### Local Development:
 ```bash
