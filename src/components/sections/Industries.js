@@ -16,21 +16,24 @@ export default function Industries() {
                     Industrial Footprint
                 </SectionTitle>
 
-                <div className="hidden lg:block absolute top-[6%] right-0 w-[90%] h-[750px] pointer-events-none z-0 overflow-hidden">
-                    <motion.img
-                        src={`${process.env.PUBLIC_URL || ''}/images/animated_domains.gif`}
-                        alt="Animated Domains"
+                <div className="absolute top-[2%] md:top-[6%] right-0 w-full md:w-[90%] h-[400px] md:h-[750px] pointer-events-none z-0 overflow-hidden">
+                    <motion.video
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
                         initial={{ x: "5%", opacity: 0 }}
-                        whileInView={{ x: 0, opacity: 0.98 }}
+                        whileInView={{ x: 0, opacity: [0, 0.7, 0.95] }}
                         viewport={{ once: true }}
                         transition={{ duration: 1.8, ease: [0.16, 1, 0.3, 1] }}
-                        className="w-full h-full object-contain object-right-top mix-blend-screen scale-110 origin-top-right"
-                        loading="lazy"
+                        className="w-full h-full object-contain object-center md:object-right-top mix-blend-screen scale-110 origin-center md:origin-top-right"
                         style={{
                             maskImage: 'radial-gradient(ellipse at 85% 30%, black 40%, rgba(0,0,0,0.5) 75%, transparent 100%)',
                             WebkitMaskImage: 'radial-gradient(ellipse at 85% 30%, black 40%, rgba(0,0,0,0.5) 75%, transparent 100%)'
                         }}
-                    />
+                    >
+                        <source src={`${process.env.PUBLIC_URL || ''}/images/animated_domains.webm`} type="video/webm" />
+                    </motion.video>
 
                     {/* Text Protection Overlay - Deeper and wider for premium readability */}
                     <div className="absolute inset-y-0 left-0 w-3/4 bg-gradient-to-r from-black via-black/90 to-transparent z-10" />
@@ -45,7 +48,7 @@ export default function Industries() {
                 {/* Industry Cards Container */}
                 <motion.div
                     {...FADE_UP}
-                    className="relative pt-48 space-y-4"
+                    className="relative pt-24 md:pt-48 space-y-4"
                 >
                     {industries.map((industry, idx) => (
                         <IndustryCard key={industry.id} industry={industry} index={idx} />

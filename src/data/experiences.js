@@ -3,7 +3,7 @@ export const experiences = [
         year: "2024–Present",
         title: "Head of Engineering",
         company: "Casumo",
-        description: "Leading engineering strategy and operations for a multinational iGaming platform. Direct oversight of 40+ engineers, driving technical excellence, platform scalability, and product innovation for 1M+ active users.",
+        description: "Leading engineering strategy and operations for a multinational iGaming platform. Direct oversight of 40+ engineers, driving technical excellence, platform scalability, and product innovation.",
         focus: ["Technical Excellence", "Platform Scalability", "Engineering Strategy", "Casino", "Payments", "Sports", "Quality Assurance", "Team Leadership", "Performance Reviews", "Coaching & Mentoring"]
     },
     {
@@ -24,7 +24,7 @@ export const experiences = [
         year: "2020–2025",
         title: "Principal Consultant",
         company: "TONCIK Consulting & Solutions",
-        description: "Strategic consulting on enterprise architecture, Smart City solutions, and Intelligent Transportation Systems (ITS) for government and private sector clients.",
+        description: "Strategic consulting on Business Process Digitalization, Enterprise Architecture, Smart City solutions, and Intelligent Transportation Systems (ITS) for government and private sector clients.",
         focus: ["Public Sector", "Digital Transformation", "Business Process Digitalization"]
     },
     {

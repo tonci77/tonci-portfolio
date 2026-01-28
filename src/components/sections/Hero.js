@@ -59,7 +59,7 @@ export default function Hero() {
                         </h1>
 
                         <p className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto lg:mx-0 leading-relaxed mb-10 font-light">
-                            High-impact technology executive with <span className="text-white font-medium">20+ years</span> experience bridging the gap between <span className="text-white">complex engineering</span> and <span className="text-brand-amber">bottom-line business results</span>.
+                            High-impact technology executive with <span className="text-white font-medium">20+ years of experience</span> bridging the gap between <span className="text-white">complex engineering</span> and <span className="text-brand-amber">bottom-line business results</span>.
                         </p>
 
                         <div className="flex flex-wrap justify-center lg:justify-start gap-6">
@@ -102,7 +102,7 @@ export default function Hero() {
                             <div className="absolute -bottom-4 -right-4 z-50 transform -rotate-12 pointer-events-none mix-blend-screen">
                                 <span className="text-[3rem] text-brand-amber/30 font-normal select-none blur-[0.3px]"
                                     style={{ fontFamily: '"Mrs Saint Delafield", cursive', textShadow: '0px 0px 8px rgba(251,191,36,0.3)' }}>
-                                    Tonci Kucic
+                                    Tonći Kučić
                                 </span>
                             </div>
                         </div>

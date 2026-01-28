@@ -1,15 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
-  <!-- Background -->
-  <rect width="128" height="128" fill="#000000" rx="24"/>
+  <!-- Background - Rounded Executive Card Style -->
+  <rect width="128" height="128" fill="#000000" rx="32"/>
+  
+  <!-- Subtle Amber Glow -->
+  <circle cx="64" cy="64" r="40" fill="#fbbf24" fill-opacity="0.1" />
 
-  <!-- Gradient Definition -->
-  <defs>
-    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
-    </linearGradient>
-  </defs>
-
-  <!-- TK Monogram -->
-  <text x="64" y="85" font-family="Arial, sans-serif" font-size="72" font-weight="bold" fill="url(#grad)" text-anchor="middle">TK</text>
+  <!-- TK Monogram in Old School Script Style -->
+  <text 
+    x="64" 
+    y="82" 
+    font-family="'Mrs Saint Delafield', cursive, 'Brush Script MT', 'Apple Chancery', sans-serif" 
+    font-size="90" 
+    fill="#fbbf24" 
+    text-anchor="middle"
+    style="filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.5));"
+  >TK</text>
+  
+  <!-- Accent Line -->
+  <path d="M40 90 Q 64 95 88 90" stroke="#fbbf24" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
 </svg>

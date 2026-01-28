@@ -4,7 +4,7 @@ import { FADE_UP, getMetricPulse, getColorPulse } from '../../constants/animatio
 
 export default function Metrics() {
     const stats = [
-        { value: "20", symbol: "+", label: "Executive Years" },
+        { value: "20", symbol: "+", label: "Years" },
         { value: "4", symbol: "", label: "Business Domains" },
         { value: "40", symbol: "+", label: "Leadership Scale" }
     ];

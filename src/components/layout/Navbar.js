@@ -1,6 +1,6 @@
 import React from 'react';
 import { Linkedin } from 'lucide-react';
-import { cn } from '../../utils';
+
 
 export default function Navbar() {
     return (
