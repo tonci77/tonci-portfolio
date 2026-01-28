@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/tonci-portfolio/static/css/main.1e65c2bf.css",
-    "main.js": "/tonci-portfolio/static/js/main.73394260.js",
+    "main.js": "/tonci-portfolio/static/js/main.d9956e7d.js",
     "index.html": "/tonci-portfolio/index.html",
     "main.1e65c2bf.css.map": "/tonci-portfolio/static/css/main.1e65c2bf.css.map",
-    "main.73394260.js.map": "/tonci-portfolio/static/js/main.73394260.js.map"
+    "main.d9956e7d.js.map": "/tonci-portfolio/static/js/main.d9956e7d.js.map"
   },
   "entrypoints": [
     "static/css/main.1e65c2bf.css",
-    "static/js/main.73394260.js"
+    "static/js/main.d9956e7d.js"
   ]
 }
